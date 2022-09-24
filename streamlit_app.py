@@ -35,8 +35,8 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 
-fruit_choice = streamlit.text_input('SF?','Kiwi')
-streamlit.write('The user entered ', fruit_choice)
+fruit_choice_1 = streamlit.text_input('SF?','Kiwi')
+streamlit.write('The user entered ', fruit_choice_1)
 
 import snowflake.connector
 
