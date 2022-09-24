@@ -38,6 +38,7 @@ streamlit.dataframe(fruityvice_normalized)
 fruit_choice_1 = streamlit.text_input('SF?','Kiwi')
 streamlit.write('The user entered ', fruit_choice_1)
 
+streamlit.stop()
 import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
